@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.container {
+    padding: 2%;
+}
+
+/* Reservations */
+
+.reservations-container {
+    text-align: center;
+}
+
+#reservations-card-container.is-active {
+    border: 15px solid;
+    border-radius: 20px;
+    padding: 15px 0;
+}
+
+.js-modal-trigger {
+    margin-bottom: 1rem;    
+}
+
+/* Modal */
+
+#email {
+    margin-left: 0;
+}
+
+/* Directions inputs */
+
+#directions-container {
+    margin: 20px 0;
+    border-top: solid;
+    padding-top: 10px;
+}
+
+#input-div {
+    margin-bottom: 20px;
+}
+
+#input-div .input-field {
+    display: inline-block;
+}
+
+#input-div .input-field #state {
+    width: 50px;
+}
+
+#RU-location {
+    margin-top: 20px;
+}
+
+#RU-location p {
+    display: inline-block;
+}
+
+#directions-container button {
+    margin-top: 20px;
+}
+
+/* Map */
+
+#map-container {
+    position: relative;
+    height: 500px;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 500px;
+}
+
+#instructions {
+  display: none;
+  position: absolute;
+  margin: 20px;
+  width: 25%;
+  height: 200px;
+  top: 0;
+  bottom: 20%;
+  padding: 20px;
+  background-color: black;
+  color: #ffffff;
+  overflow-y: scroll;
+  font-family: sans-serif;
+}
+
+#instructions.is-active {
+    display: block;
+}
+
+@media screen and (max-width: 850px) {
+    main .container:first-child h1 {
+        text-align: center;
+    }
+    
+    #input-div .input-field {
+        display: block;
+        margin-bottom: 5px;        
+    }
+}
+
